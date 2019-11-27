@@ -1,24 +1,16 @@
 class Pub
 
-  attr_reader(:name, :till)
+  attr_reader(:name, :till, :drinks)
 
-def initialize(name, till)
+def initialize(name, till, drinks)
 
   @name = name
-  @till = till
-  @drinks = []
+  @till = 0
+  @drinks = nil
 end
 
-def drink_count
-  return @drink.size
+def increase_total_cash(amount)
+  @till +=  amount
 end
-
-def increase_drinks_sold()
-    @drinks_sold += 1
-  end
-
-  def increase_till(amount)
-    @till +=  amount
-  end
 
 end

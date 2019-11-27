@@ -1,28 +1,19 @@
 class Customers
 
-  attr_reader(:name, :wallet)
+  attr_reader(:name, :wallet, :drinking)
 
-def initialize(name, wallet)
+def initialize(name, wallet, drinking)
   @name = name
   @wallet = wallet
+  @drinks = []
+
 end
 
-def add_to_wallet(amount)
-  @wallet += amount
-end
-
-def remove_from_wallet(amount)
+def remove_wallet(amount)
   @wallet -= amount
 end
 
-def drink_count()
-  return @drinks.length
+def add_drink(drink)
+  @drinks.push(drink)
 end
-
-def remove_cash_from_wallet(amount)
-  @wallet -= amount
-end
-
-
-
 end
