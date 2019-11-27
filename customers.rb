@@ -1,15 +1,15 @@
 class Customers
 
-  attr_reader(:name, :wallet, :drinking)
+  attr_reader(:name, :wallet, :drinks)
 
-def initialize(name, wallet, drinking)
+def initialize(name, wallet, drinks)
   @name = name
   @wallet = wallet
-  @drinks = []
+  @drinks = drinks
 
 end
 
-def remove_wallet(amount)
+def buy_drink(amount)
   @wallet -= amount
 end
 

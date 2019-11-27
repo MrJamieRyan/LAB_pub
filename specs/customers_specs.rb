@@ -29,6 +29,6 @@ end
 
 def test_add_drink()
   @drinks.add_drink(@drink1)
-assert_equal(@drink1)
+assert_equal(1, @customers.drinks )
 end
 end
